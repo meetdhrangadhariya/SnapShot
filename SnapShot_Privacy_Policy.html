@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — SnapShot: Full Page Capture & Editor</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: #f0f2f8;
+    color: #2d2d4e;
+    min-height: 100vh;
+  }
+
+  /* ── Header ── */
+  .header {
+    background: linear-gradient(135deg, #3b3b8f 0%, #4a47a3 50%, #3730a3 100%);
+    padding: 36px 40px 32px;
+    color: #fff;
+  }
+  .header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+  .header-sub {
+    font-size: 13px;
+    color: rgba(255,255,255,0.75);
+    font-family: Arial, sans-serif;
+  }
+  .header-sub span { margin: 0 8px; }
+
+  /* ── Page body ── */
+  .page {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px 60px;
+  }
+
+  /* ── Cards ── */
+  .card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 28px 32px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    border-left: 4px solid #4a47a3;
+  }
+
+  .card h2 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #4a47a3;
+    margin-bottom: 14px;
+    font-family: Arial, sans-serif;
+  }
+
+  .card p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #3d3d5c;
+  }
+
+  .card ul {
+    margin: 10px 0 0 4px;
+    padding-left: 18px;
+  }
+  .card ul li {
+    font-size: 14px;
+    line-height: 1.75;
+    color: #3d3d5c;
+    margin-bottom: 3px;
+  }
+  .card ul li strong {
+    color: #2d2d4e;
+  }
+
+  /* ── Promise badges ── */
+  .badges {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 14px;
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #1a8a5a;
+    background: #edfaf4;
+    border: 1px solid #b6ecd5;
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-weight: 500;
+  }
+  .badge::before { content: '✓'; font-weight: 700; }
+
+  /* ── Promise highlight box ── */
+  .promise-box {
+    background: #f5f5ff;
+    border-radius: 6px;
+    padding: 16px 18px;
+    margin-bottom: 14px;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #3d3d5c;
+  }
+  .promise-box strong { color: #2d2d4e; }
+
+  /* ── Data access box ── */
+  .data-box {
+    background: #f5f5ff;
+    border-radius: 6px;
+    padding: 16px 18px;
+    font-size: 14px;
+    color: #3d3d5c;
+    line-height: 1.65;
+  }
+
+  /* ── Footer ── */
+  .footer {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #888;
+    margin-top: 48px;
+    line-height: 1.9;
+  }
+  .footer a { color: #4a47a3; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+  .footer-divider { margin: 0 8px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🔒 Privacy Policy</h1>
+  <div class="header-sub">
+    SnapShot: Full Page Capture &amp; Editor
+    <span>|</span>
+    Last updated: April 2026
+  </div>
+</div>
+
+<div class="page">
+
+  <!-- Our Core Promise -->
+  <div class="card">
+    <h2>Our Core Promise</h2>
+    <div class="promise-box">
+      SnapShot is a <strong>100% local tool</strong>. Everything happens on your device. We do not collect, store, transmit, or sell any of your data — ever.
+    </div>
+    <div class="badges">
+      <span class="badge">No accounts required</span>
+      <span class="badge">No servers</span>
+      <span class="badge">No data collection</span>
+      <span class="badge">No tracking</span>
+    </div>
+  </div>
+
+  <!-- What Data We Access -->
+  <div class="card">
+    <h2>What Data We Access</h2>
+    <p>To capture screenshots, SnapShot temporarily reads the visible content of the current browser tab. This data is:</p>
+    <div class="data-box" style="margin-top:14px;">
+      <ul style="padding-left:16px; margin:0;">
+        <li>Processed entirely within your browser</li>
+        <li>Never sent to any external server</li>
+        <li>Discarded immediately after you close the editor</li>
+        <li>Never stored beyond your active session</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Permissions Explained -->
+  <div class="card">
+    <h2>Permissions Explained</h2>
+    <ul>
+      <li><strong>activeTab</strong> — Required to capture the currently open tab you choose to screenshot.</li>
+      <li><strong>scripting</strong> — Required to scroll the page and stitch full-page screenshots together.</li>
+      <li><strong>tabCapture</strong> — Required to access the tab's media stream for screen recording.</li>
+      <li><strong>downloads</strong> — Required to save your exported PNG, JPG, PDF, or WebM file to your Downloads folder.</li>
+      <li><strong>storage</strong> — Used only to remember your preferences (e.g. hide-elements toggle) locally.</li>
+    </ul>
+  </div>
+
+  <!-- Data We Do NOT Collect -->
+  <div class="card">
+    <h2>Data We Do NOT Collect</h2>
+    <p>We do not collect:</p>
+    <ul>
+      <li>Personal information (name, email, location)</li>
+      <li>Browsing history or visited URLs</li>
+      <li>Screenshots or captured images</li>
+      <li>Usage analytics or telemetry</li>
+      <li>Device identifiers or IP addresses</li>
+      <li>Any form of cookies or tracking identifiers</li>
+    </ul>
+  </div>
+
+  <!-- Third-Party Services -->
+  <div class="card">
+    <h2>Third-Party Services</h2>
+    <p>SnapShot does not integrate with any third-party analytics, advertising, or data services. The only third-party library used is <strong>jsPDF</strong> (an open-source PDF generation library), which runs entirely in your browser and does not transmit data.</p>
+  </div>
+
+  <!-- Children's Privacy -->
+  <div class="card">
+    <h2>Children's Privacy</h2>
+    <p>SnapShot does not knowingly collect any information from children under the age of 13. The extension has no user accounts and collects no personal data from any user of any age.</p>
+  </div>
+
+  <!-- Changes to This Policy -->
+  <div class="card">
+    <h2>Changes to This Policy</h2>
+    <p>If we update this privacy policy, we will update the "Last updated" date above. Continued use of the extension constitutes acceptance of any changes.</p>
+  </div>
+
+  <!-- Contact -->
+  <div class="card">
+    <h2>Contact</h2>
+    <p>If you have questions about this privacy policy, please contact us at: <a href="mailto:meetsoni.soni@gmail.com" style="color:#4a47a3;font-weight:600;">meetsoni.soni@gmail.com</a></p>
+    <p style="margin-top:10px;">We are committed to transparency and will respond promptly.</p>
+  </div>
+
+  <div class="footer">
+    SnapShot: Full Page Capture &amp; Editor &nbsp;|&nbsp; Privacy Policy &nbsp;|&nbsp; © 2026
+    <br>
+    This extension is a local tool. Your data stays on your device.
+    <br><br>
+    Built by CA Meet Dhrangadhariya
+  </div>
+
+</div>
+
+</body>
+</html>
